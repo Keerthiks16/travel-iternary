@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Onboarding from "./pages/Onboarding";
 import Create from "./pages/Create";
+import OnBoarding from "./pages/OnBoarding";
 import Favourites from "./pages/Favourites";
 import Profile from "./pages/Profile";
 import Dashboard from "./pages/Dashboard";
@@ -15,7 +15,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/search" element={<Onboarding />} />
+            <Route path="/search" element={<OnBoarding />} />
             <Route path="/create" element={<Create />} />
             <Route path="/favorites" element={<Favourites />} />
             <Route path="/profile" element={<Profile />} />

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
-const Onboarding = () => {
+const OnBoarding = () => {
   const { darkMode } = useContext(ThemeContext);
   const [destination, setDestination] = useState("");
   const [companion, setCompanion] = useState("");
@@ -294,4 +294,4 @@ const Onboarding = () => {
   );
 };
 
-export default Onboarding;
+export default OnBoarding;
